@@ -1,0 +1,16 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: blog-translation
+  description: Blog Translation API
+  tags:
+    - java
+    - spring
+    - web
+    - blog
+  annotations:
+    'backstage.io/kubernetes-label-selector': 'app.kubernetes.io/part-of=blog-translation'
+spec:
+  type: service
+  lifecycle: experimental
+  owner: making
