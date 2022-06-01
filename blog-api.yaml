@@ -1,0 +1,16 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: blog-api
+  description: Blog Entry API
+  tags:
+    - java
+    - spring
+    - web
+    - blog
+  annotations:
+    'backstage.io/kubernetes-label-selector': 'app.kubernetes.io/part-of=blog-api'
+spec:
+  type: service
+  lifecycle: experimental
+  owner: making
