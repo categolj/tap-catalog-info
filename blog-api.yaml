@@ -2,6 +2,7 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: blog-api
+  namespace: blog
   description: Blog Entry API
   tags:
     - java
@@ -15,16 +16,4 @@ spec:
   lifecycle: experimental
   owner: making
   providesApis:
-  - blog-api
----
-apiVersion: backstage.io/v1alpha1
-kind: API
-metadata:
-  name: blog-api
-  description: blog-api
-spec:
-  type: openapi
-  lifecycle: experimental
-  owner: making
-  definition:
-    $text: https://blog-api-blog.apps.ik.am/v3/api-docs
+  - blog-api-run.pineapple.maki.lol
