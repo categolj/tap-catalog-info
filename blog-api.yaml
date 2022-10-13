@@ -15,5 +15,6 @@ spec:
   type: service
   lifecycle: experimental
   owner: making
+  system: blog
   providesApis:
   - blog-api-run.pineapple.maki.lol
