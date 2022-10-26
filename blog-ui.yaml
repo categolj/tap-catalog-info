@@ -2,6 +2,7 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: blog-ui
+  namespace: blog  
   description: Blog UI
   tags:
     - java
